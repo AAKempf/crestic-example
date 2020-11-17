@@ -1,4 +1,4 @@
-# crestic config examples and script files
+# crestic config example and script files
 
 ## Introduction
 
