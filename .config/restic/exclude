@@ -1,0 +1,13 @@
+**/.cache/**
+**/temp/**
+**/tmp/**
+**/log/**
+**/logs/**
+**/cache/**
+**/sessions/**
+**/sshfs/**
+**/images/*/small/**
+**/images/*/medium/**
+**/images/*/large/**
+
+# There are also some more at https://github.com/rubo77/rsync-homedir-excludes

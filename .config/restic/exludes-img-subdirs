@@ -1,0 +1,3 @@
+# We wanna exclude this sub dirs
+**/images/event**
+**/images/flyer**

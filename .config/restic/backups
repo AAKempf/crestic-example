@@ -1,0 +1,10 @@
+#! the activated backups from ~/.config/crestic/crestic.cfg
+# file will be included from cr_*.sh
+backups=(
+    'server@server'
+    'home@admin'
+    'code@code'
+    'images@images'
+    'photos@photos'
+    'flyer@flyer'
+    )
