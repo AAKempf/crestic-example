@@ -13,13 +13,14 @@ prune_date=$(date -dsunday +'%Y-%m-%d')
 backups=('')
 source ./.config/restic/backups
 
-prune=''
-if [ "$now_date" == "$prune_date" ]; then
-  prune='--prune'
-fi
-
 for index in ${!backups[*]}; do
-  crestic ${backups[$index]} forget ${prune}
+
+  crestic ${backups[$index]} forget
+
+    if [ "$now_date" == "$prune_date" ]; then
+      crestic ${backups[$index]} prune
+    fi
+
 done
 
 # EOF
