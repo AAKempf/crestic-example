@@ -15,7 +15,7 @@ source ./.config/restic/backups
 
 for index in ${!backups[*]}; do
 
-  crestic ${backups[$index]} forget
+  crestic "${backups[$index]}" forget
 
     if [ "$now_date" == "$prune_date" ]; then
       crestic ${backups[$index]} prune

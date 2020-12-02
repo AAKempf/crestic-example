@@ -29,7 +29,7 @@ EOM
 for index in ${!backups[*]}; do
   time_start=$(date +%s)
 
-  echo crestic ${backups[$index]} backup
+  echo crestic "${backups[$index]}" backup
 
   time_diff=$(($(date +%s) - time_start))
 
